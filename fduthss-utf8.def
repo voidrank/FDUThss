@@ -1,0 +1,25 @@
+\ProvidesFile{fduthss-utf8.def}
+	[2013/12/26 v1.4-rc4 Labels and captions in UTF-8 encoding
+		for the fduthss document class]
+
+\def\label@ctitle{论文题目：}
+\def\label@cauthor{姓\hphantom{汉字}名：}
+\def\label@studentid{学\hphantom{汉字}号：}
+\def\label@school{院\hphantom{汉字}系：}
+\def\label@cmajor{专\hphantom{汉字}业：}
+\def\label@direction{研究方向：}
+\def\label@cmentor{指导教师：}
+\def\label@ementor{Supervised by\ }
+\def\label@ckeywords{关键词：}
+\def\label@ekeywords{Keywords:\ }
+
+\def\titlepagename{封面}
+\def\cuniversity{复旦大学}
+\def\euniversity{Fudan University}
+\def\cthesisname{本科毕业论文}
+\def\ethesisname{Undergraduate Thesis}
+\def\cabstractname{摘要}
+\def\eabstractname{Abstract}
+\def\ctitleheader{探索物体检测网络回归特征}
+
+\endinput

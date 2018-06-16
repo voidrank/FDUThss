@@ -1,0 +1,83 @@
+\documentclass[UTF8, colorlinks, oneside]{fduthss}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[
+	backend = biber, style=caspervector, utf8, citestyle = numeric,
+	hyperref=true, backref=true, sorting=none,
+	giveninits = true, sortgiveninits = true
+]{biblatex}
+\usepackage{bm}% bold math
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage{enumerate}
+\usepackage{epsfig}
+\usepackage{fancyvrb}
+\usepackage{framed}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{paracol}
+\usepackage{rotating} 
+\usepackage{subcaption}
+\usepackage{tabulary}
+\usepackage[titletoc]{appendix}
+\usepackage{url}
+
+%\usepackage[monochrome]{color}
+% 使被强调的内容为红色。hyperref 宏包在设置了 colorlinks 时会引入 xcolor 宏包，
+% 后者定义了 \textcolor 命令，故不用单独引入宏包。
+\newcommand{\myemph}[1]{\emph{\textcolor{red}{#1}}}
+
+% todo 的标记
+\newcommand{\todo}[1]{\emph{\textcolor{red}{TODO: #1}}}
+\renewcommand{\baselinestretch}{1.5}
+
+% fduthss 文档模版的版本。
+\newcommand{\docversion}{v1.4 rc4}
+% 设定文档的基本信息。
+\fduthssinfo{
+	cthesisname = {本科毕业论文}, ethesisname = {Undergraduate Thesis},
+	ctitle = {复旦大学本科毕业论文模板},
+	etitle = {Undergraduate Thesis Template of Fudan University},
+	cauthor = {},
+	eauthor = {void rank},
+	studentid = {123456789},
+	date = {2018年5月},
+	school = {计算机科学技术学院},
+	cmajor = {计算机科学与技术},
+	direction = {模板},
+	cmentor = {professor}, ementor = {professor},
+  ckeywords = { 模板， \LaTeX},
+  ekeywords = { TEMPLATE, \LaTeX}
+}
+\addbibresource{egbib.bib}
+\begin{document}
+	\frontmatter
+
+	\maketitle
+	\include{chap/abstract}
+	
+	\tableofcontents
+
+	\mainmatter
+	
+	\include{chap/chap1}
+	\include{chap/chap2}
+	\include{chap/chap3}
+	\include{chap/chap4}
+	\include{chap/chap5}
+  
+  \appendix
+  \emergencystretch=1em
+	\printbibliography[heading = bibintoc]
+	\backmatter
+	
+	% 致谢。
+	\include{chap/acknowledge}
+\end{document}
+

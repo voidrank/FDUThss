@@ -1,0 +1,51 @@
+\chapter{如何插入图片、表格、公式}\label{chap3}
+
+请打开chap/chap3.tex(使用文本编辑器，IDE等)进行修改
+
+\section{插入图片}
+
+可以修改的部分
+\begin{enumerate}
+\item 图片路径: img/fduword\_black.png
+\item 图片大小: width=0.8
+\item 图注: caption
+\item 图片引用锚: label
+\end{enumerate}
+
+\begin{figure}[!thbp]
+    \begin{center}
+    \includegraphics[width=0.8\textwidth]{img/fduword_black.png}
+    \end{center}
+    \caption{logo}
+    \label{fig:fdulogo}
+\end{figure}
+
+
+\section{插入表格}
+
+如果调不到自己想要的格式请直接google或者wiki
+
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{表注}
+    \label{tab:example_tab}
+    \begin{tabular}{l|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      type & c \\
+      \hline
+      a & 0.06 \\
+      b & 0.03 \\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\section{公式}
+
+如果调不到自己想要的格式请直接google或者wiki
+
+\begin{equation}
+\label{equa:example_equa}
+\frac{\partial{\varepsilon}}{\partial{\bm{x}_L}} =
+\frac{\partial \varepsilon}{\partial \bm{x_L}}\frac{\partial x_L}{\partial x_l} =
+\frac{\partial \varepsilon}{\partial \bm{x_L}}(1 + \frac{\partial }{\partial \bm{x}_l}\sum_{i=l}^{L-1} \mathcal{F}(\bm{x}_i, \mathcal{W}_i))
+\end{equation}
